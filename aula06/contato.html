@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+</head>
+<body>
+    <h1>ENTRE EM CONTATO</h1>
+
+    <form>
+        <label>Nome</label><br>
+        <input type="text" id="Nome"><br>
+
+        <label>Sobrenome</label><br>
+        <input type="text" id="Sobrenome"><br><br>
+
+        <h2>Botões tipo radio</h2>
+        <p>Escolha seu time preferido:</p>
+        <input type="radio" name="time1" value="SPFC"> SPFC<br>
+        <input type="radio" name="time1" value="Tricolor"> Tricolor<br>
+        <input type="radio" name="time1" value="Sao Paulo"> São Paulo<br><br>
+
+        <h2>Botões tipo checkbox</h2>
+        <p>Qual time é tricampeão mundial?</p>
+        <input type="checkbox" name="tricampeao1" value="SPFC"> SPFC<br>
+        <input type="checkbox" name="tricampeao1" value="Tricolor"> Tricolor<br>
+        <input type="checkbox" name="tricampeao1" value="Sao Paulo"> São Paulo<br><br>
+    </form>
+    <form action="https://formtester.goodbytes/post.php" method="post">
+        <label>Nome</label><br>
+        <input type="text" id="Nome2"><br>
+
+        <label>Sobrenome</label><br>
+        <input type="text" id="Sobrenome2"><br><br>
+        <h3>Botão Enviar (Submit)</h3>
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
