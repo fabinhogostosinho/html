@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido Burger King</title>
+</head>
+<body style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin: 20px;">
+    <h1 style="color: rgb(209, 14, 14);">Faça seu Pedido aqui!</h1>
+    <img src="../aula07/logo.jpeg" style="width: 12%;"
+    <form>
+        <h2 style="color: rgb(238, 166, 11);">Dados do Cliente</h2>
+        <label style="color: rgb(15, 96, 189);">Nome:</label>
+        <br>
+        <input type="text" placeholder="Seu nome aqui" name="nome" required>
+        <br>
+        <br>
+
+        <label style="color: rgb(15, 96, 189);">Telefone:</label><br>
+        <input type="tel" placeholder="(11) XXXXX-XXXX" name="telefone" required>
+        <br>
+        <br>
+
+        <h2 style="color: rgb(238, 166, 11);">Escolha seu Lanche</h2>
+        <input type="radio" name="lanche" value="X-Salada" required > X-Salada
+            <br>
+        <input type="radio" name="lanche" value="X-Bacon" required> X-Bacon
+        <br>
+        <input type="radio" name="lanche" value="X-Frango" required> X-Frango
+        <br>
+        <br>
+
+
+        <h2 style="color: rgb(238, 166, 11);">Adicionais</h2>
+        <input type="checkbox" name="adicional" value="Batata Frita"> Batata frita<br>
+        <input type="checkbox" name="adicional" value="Nuggets"> Nuggets<br>
+        <input type="checkbox" name="adicional" value="Onion Rings"> Onion Rings<br><br>
+
+        <h2 style="color: rgb(238, 166, 11);">Bebida</h2>
+        <select name="bebida" required>
+            <option value=""> Selecione </option>
+            <option value="Refrigerante">Refrigerante</option>
+            <option value="Suco">Suco</option>
+            <option value="Água">Água</option>
+            <option value="Milkshake">Milkshake</option>
+        </select>
+        <br>
+        <br>
+
+        <h2 style="color: rgb(238, 166, 11);">Observações</h2>
+        <textarea name="observacoes" placeholder="Ex.: sem cebola, bem passado "></textarea>
+        <br>
+        <br>
+
+        <button style=" none; color: black; background-color: rgb(209, 14, 14); padding: 15px; border-radius: 60px; 
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" >Clique Aqui</button>
+    </form>
+</body>
+</html>
