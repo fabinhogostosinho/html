@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arena FutGol – Compra de Ingressos</title>
+</head>
+<body>
+    <h1 style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #004c4c; color: white; padding: 20px;">
+        Arena FutGol – Compra de Ingressos
+    </h1>
+
+    <div style="text-align: center;">
+        <img src="estadio.jpg" alt="Estádio Arena FutGol" style="width: 60%; border-radius: 10px;">
+    </div>
+
+    <h2 style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f0f0f0; padding: 20px;">Sobre nós</h2>
+
+    <p style="display: block; text-align: center; font-family: Arial, Helvetica, sans-serif; max-width: 700px; margin: auto;">
+        O Arena FutGol é um estádio moderno, projetado para oferecer conforto e segurança aos torcedores. 
+        Aqui, você vivencia grandes emoções em jogos inesquecíveis, com uma estrutura completa para toda a família.
+    </p>
+
+    <h2 style="text-align: center;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Lista de jogos disponíveis</h2>
+    <div style="border: 3px solid #004c4c; border-radius: 15px; padding: 25px; max-width: 600px; margin: 30px auto 30px auto; background-color: #f8f8f8;">
+        <ul style="font-size: 28px; font-weight: bold; text-align: center; list-style-position: inside; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin: 0;">
+            <li>Time A x Time B – 10/09</li>
+            <li>Time C x Time D – 12/09</li>
+            <li>Time E x Time F – 15/09</li>
+            <li>Time G x Time H – 18/09</li>
+        </ul>
+    </div>
+
+    <div style="border: 3px solid #004c4c; border-radius: 15px; padding: 25px; max-width: 600px; margin: 30px auto 30px auto; background-color: #f8f8f8;">
+        <form style="padding: 0; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            <h2 style="color: black; text-align: center;">Formulário para compra de ingressos</h2>
+            
+            <label>Nome do torcedor:</label><br>
+            <input type="text" name="nome" placeholder="Digite seu nome" required 
+            style="width: 100%; padding: 8px;"><br><br>
+
+            <label>Email:</label><br>
+            <input type="email" name="email" placeholder="exemplo@email.com" required 
+            style="width: 100%; padding: 8px;"><br><br>
+
+            <label style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Jogo escolhido:</label>
+            <br>
+            <select name="jogo" required style="width: 100%; padding: 8px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                <option value="">Selecione</option>
+                <option value="Time A x Time B – 10/09">Time A x Time B – 10/09</option>
+                <option value="Time C x Time D – 12/09">Time C x Time D – 12/09</option>
+                <option value="Time E x Time F – 15/09">Time E x Time F – 15/09</option>
+                <option value="Time G x Time H – 18/09">Time G x Time H – 18/09</option>
+            </select>
+            <br>
+            <br>
+
+            <label>Quantidade de ingressos:</label>
+            <br>
+            <input type="number" name="quantidade" min="1" max="10" value="1" required 
+            style="width: 100%; padding: 8px;">
+            <br>
+            <br>
+
+            <label>Setor do estádio:</label><br>
+            <select name="setor" required style="width: 100%; padding: 8px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                <option value="">Selecione</option>
+                <option value="Arquibancada">Arquibancada</option>
+                <option value="Cadeiras">Cadeiras</option>
+                <option value="Camarote">Camarote</option>
+            </select>
+            <br>
+            <br>
+
+            <label style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Data do jogo:</label><br>
+            <input type="date" name="data" required style="width: 100%; padding: 8px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            <br>
+            <br>
+
+            <button style="border: none; color: white; background-color: #004c4c; 
+            padding: 15px; border-radius: 60px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            cursor: pointer; width: 100%;">
+                Finalizar Compra
+            </button>
+        </form>
+    </div>
+<div style="text-align: center; margin: 30px 0;">
+    <a href="https://www.youtube.com/" target="_blank" 
+       style="display: inline-block; background-color: #e52d27; color: white; padding: 15px 30px; border-radius: 40px; text-decoration: none; font-size: 20px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: bold;">
+        Acompanhe os lances ao vivo
+    </a>
+</div>
+</body>
+</html>
