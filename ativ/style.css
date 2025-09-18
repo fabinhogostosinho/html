@@ -1,0 +1,98 @@
+ body {
+     margin: 0;
+     font-family: Arial, sans-serif;
+     color: #111;
+     line-height: 1.4;
+     padding: 20px;
+ }
+
+ h2 {
+     font-size: 1.2rem;
+     margin-top: 24px;
+ }
+ #ex1 {
+  display: flex;
+ }
+ #ex2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ #ex3 {
+    display: flex;
+    flex-direction: column;
+ }
+ #ex4 {
+    display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+    align-items: center;
+ }
+ #ex5{
+    display: flex;
+    justify-content: space-evenly;
+ }
+ #ex6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+ }
+#ex7{
+    display: flex;
+   flex-wrap: wrap;
+}
+#ex7 .c1{
+    width: 100%;
+}
+#ex8 {
+    display: flex;
+    justify-content: space-evenly;
+}
+#ex9 .c1{
+    width: 600px;
+
+}
+#ex10{
+    display: flex;
+  align-items: flex-start;
+  height: 30px;
+  
+    
+
+}
+
+ .caixa-conteiner {
+     border: 2px dashed #ccc;
+     padding: 12px;
+     min-height: 120px;
+     border-radius: 6px;
+     background: #fff;
+     margin-top: 8px;
+     display: flex;
+    
+ }
+
+ .caixa {
+     width: 80px;
+     height: 80px;
+     border-radius: 6px;
+     color: #fff;
+     font-weight: bold;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 4px;
+ }
+
+ .c1 {
+     background: #e74c3c
+ }
+
+ .c2 {
+     background: #3498db
+ }
+
+ .c3 {
+     background: #2ecc71
+ }
