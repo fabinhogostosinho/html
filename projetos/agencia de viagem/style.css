@@ -1,0 +1,77 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+/* header*/
+header {
+    background-color: #1D0F6E ;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 10px 70px;
+}
+/* main*/
+.aviao {
+    background-image: url(img/aviao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 750px;
+/* Configuração do texto no centro*/ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aviao h2{
+    color: white;
+    font-size: 70px;
+    width: 950px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.pacote img{
+    width: 400px;
+    height: 600px;
+}
+.pacote{
+    border: 3px solid black;
+    /* Expessura da borda, tipo da borda, cor da borda*/
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pacote p { 
+    font-size: 32px;
+}
+
+.pacote span {
+    font-size: 20px;
+}
+.titulo {
+    font-size: 90px;
+    color: #1d0f6e;
+    text-align: center;
+    margin: 60px 0;
+}
+
+/*footer*/ 
+footer {
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #1d0f6e;
+color: white;
+height: 300px;
+font-size: 40px;
+}
