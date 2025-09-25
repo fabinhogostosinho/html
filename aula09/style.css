@@ -1,0 +1,24 @@
+body {
+    background-image: url(img/pernalonga.jpg);
+    background-repeat: no-repeat; /*não repete o fundo*/
+    background-size: cover;
+    /*contain - aumenta a imagem sem cortar (deixa espaços vazios)*/
+    /*cover - aumenta a imagem podendo cortar ela (não deixa espaços vazios)*/
+    background-position: center;
+    /*left, right, center, top, bottom*/
+    background-attachment: fixed;
+    /*scroll - fundo mexe com o texto*/
+    /*fixed - fundo fica fixo*/
+    background-color: aqua;
+
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(211, 211, 211, 0.137);
+}
+ p{
+    font-size: 90px;
+ }
