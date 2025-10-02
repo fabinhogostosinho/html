@@ -3,4 +3,5 @@ img{
 }
 img:hover{
     opacity: 1;
+    scale: 200%;
 }
