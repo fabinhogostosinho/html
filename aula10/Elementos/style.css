@@ -1,0 +1,26 @@
+/*CSS*/
+a{
+    background-color: lightcyan;
+    padding: 7px;
+    text-decoration: none;
+    border: 7px;
+    color: black;
+}
+img{
+    opacity: 0.5; /*valores entre 0 e 1*/
+}
+p{
+    transform: scale(1);
+}
+a:hover{
+    background-color: aqua;
+    color: red;
+    padding: 15px;
+    border-radius: 50px;
+}
+p:hover{
+    color: green;
+}
+img:hover{
+    opacity: 1;
+}
