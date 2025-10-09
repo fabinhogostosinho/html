@@ -1,0 +1,21 @@
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+}
+table {
+    border-collapse: collapse;
+}
+
+th {
+    background-color: rgb(135, 139, 143);
+}
+
+.apro {
+    color: green;
+}
+
+.repr {
+    color: red;
+}

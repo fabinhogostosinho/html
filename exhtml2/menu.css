@@ -1,0 +1,18 @@
+body {
+  text-align: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  display: block;
+  margin: 10px;
+  text-decoration: none;
+  color: blue;
+}
+.voltar {
+display: flex;
+text-align: center;
+text-decoration: none;
+color: blue;
+}
