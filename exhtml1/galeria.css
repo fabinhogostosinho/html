@@ -1,0 +1,26 @@
+body {
+margin: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.galeria {
+display: grid;
+grid-template-columns: repeat(3, 150px);
+grid-template-rows: repeat(3, 150px);
+gap: 10px;
+}
+
+.galeria img {
+width: 150px;
+height: 150px;
+}
+
+.voltar {
+display: flex;
+text-align: center;
+text-decoration: none;
+color: blue;
+}

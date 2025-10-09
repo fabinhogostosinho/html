@@ -1,0 +1,60 @@
+body {
+margin: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+
+.tabuleiro {
+display: grid;
+grid-template-columns: repeat(3, 100px);
+grid-template-rows: repeat(4, 100px);
+gap: 10px;
+}
+
+
+.vermelho { 
+    background: blue; 
+}
+.laranja { 
+    background: orange; 
+}
+.amarelo { 
+    background: yellow; 
+}
+.verde { 
+    background: green;
+ }
+.azul { 
+    background: blue;
+ }
+.roxo { 
+    background: purple;
+ }
+.rosa { 
+    background: pink;
+ }
+.marrom {
+     background: brown;
+     }
+.cinza {
+     background: gray;
+     }
+.ciano {
+     background: cyan; 
+    }
+.limao {
+     background: lime;
+     }
+.dourado { 
+    background: gold;
+ }
+ 
+ .voltar {
+display: flex;
+text-align: center;
+text-decoration: none;
+color: blue;
+}
