@@ -1,0 +1,37 @@
+button {
+    display: block;
+    margin: 20px 0;
+}
+.sombra {
+    /*box-shadow: X Y DESFOQUE COR;*/
+    box-shadow: 0px 0px 10px gray;
+}
+.linha {
+    text-decoration: underline;
+    text-decoration-color: blue;
+    text-decoration-thickness: 3px;
+}
+
+/*TRANSITIONS*/
+/*SEM TRANSITION*/
+.sem {
+    background-color: red;
+}
+.sem:hover {
+    background-color: blue;
+}
+/*COM TRANSITION*/
+.transition {
+    background-color: red;
+    transition: backgrond-color 1s ease;
+}
+.transition:hover {
+    background-color: blue;
+}
+img {
+    width: 200px;
+    transition: width 0.5s;
+}
+img:hover {
+    width: 400px;
+}

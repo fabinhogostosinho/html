@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;  
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bola{
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    border-radius: 360px;
+    margin: 20px;
+}
