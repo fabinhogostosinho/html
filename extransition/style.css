@@ -108,24 +108,5 @@ p {
   transform: scale(1.2);
   align-items: center;
 }
-/* Exercício 7 – Menu interativo */
-nav {
-  background-color: #001b96;
-  padding: 15px;
-  text-align: center;
-}
 
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 20px;
-  position: relative;
-  transition: color 0.5s ease;
-}
-nav a:hover {
-  color: rgb(172, 160, 160);
-}
 
-nav a:hover::after {
-  width: 100%;
-}
