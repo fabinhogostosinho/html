@@ -1,0 +1,112 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+/* Exercício 1 – Botão colorido */
+.botao1 {
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+}
+.botao1:hover {
+  background-color: #0b7dda;
+}
+
+/* Exercício 2 – Crescendo */
+.botao2 {
+  background-color: rgb(24, 162, 255);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  transition: transform 0.3s ease;
+}
+.botao2:hover {
+  transform: scale(1.2);
+}
+
+/* Exercício 3 – Botão com atraso */
+.botao3 {
+  background-color: rgb(7, 79, 112);
+  color: white;
+  border: 2px solid rgb(7, 79, 112);
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: all 0.3s ease 0.5s; /* 0.5s de atraso */
+}
+.botao3:hover {
+  background-color: white;
+  color:rgb(7, 79, 112);
+  border-color:rgb(7, 79, 112);
+}
+
+/* Exercício 4 – Cartão de destaque */
+.card {
+  background: white;
+  text-align: center;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  margin: 10px auto;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.card:hover {
+  background: #f0f8ff;
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+/* Exercício 5 – Texto interativo */
+p {
+  transition: all 0.4s ease;
+}
+
+.texto1:hover {
+  color: rgb(24, 162, 255);
+  font-size: 1.2em;
+}
+
+.texto2 {
+  transition: all 0.4s ease 0.5s; /* com delay */
+}
+.texto2:hover {
+  color: rgb(40, 140, 165);
+  font-size: 1.3em;
+}
+
+.texto3:hover {
+  color: rgb(7, 79, 112);
+  font-size: 1.2em;
+}
+
+/* Exercício 6 – Imagem com zoom */
+.imagem-container {
+    width: 600px;
+}
+.imagem-container img {
+  width: 100%;
+  transition: transform 0.4s ease;
+}
+.imagem-container img:hover {
+  transform: scale(1.2);
+}
+/* Exercício 7 – Menu interativo */
+
+nav {
+  background-color: #1c86ff;
+  padding: 15px;
+  text-align: center;
+}

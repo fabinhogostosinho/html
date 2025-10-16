@@ -1,5 +1,5 @@
 body{
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -7,10 +7,13 @@ body{
 }
 
 .container {
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+.container:hover .bola {
+    transform: translateX(300px);
 }
 
 .bola{
@@ -19,4 +22,22 @@ body{
     background-color: lightblue;
     border-radius: 360px;
     margin: 20px;
+    transition: transform 5s ;
+}
+.ease {
+    transition-timing-function: ease;
+    /*Devagar, acelera, devagar*/
+}
+.linear {
+    transition-timing-function:  linear;
+}
+
+.ease-in {
+    transition-timing-function: ease-in;
+}
+.ease-out {
+    transition-timing-function: ease-out;
+}
+.ease-in-out {
+    transition-timing-function: ease-in-out;
 }
