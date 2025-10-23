@@ -1,0 +1,126 @@
+.quadrado {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: movimento 2s infinite alternate;
+}
+@keyframes movimento {
+    0% {
+        transform: translateX(0);
+    }
+    50%{
+        background-color: aqua;
+    }
+    100% {
+        transform: translateX(200px); background-color: black;
+    }
+    
+}
+.mudarcor {
+  width: 100px;
+  height: 100px;
+  background: red;
+  animation: cor 6s infinite;
+}
+@keyframes cor {
+    0% {
+    }
+    50%{
+        background-color: aqua;
+    }
+    100% {
+         background-color: black;
+    }
+}
+
+.botao {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  background: grey;
+  color: white;
+  animation: abotao 5s infinite alternate;
+}
+
+@keyframes abotao {
+  0% { 
+    background: grey; 
+    color: white; 
+    transform: scale(1); 
+}
+  50% { 
+    background: blue; 
+    color: black; 
+    transform: scale(1.2); 
+}
+  100% { 
+    background: grey; 
+    color: white; 
+    transform: scale(1); 
+}
+}
+.texto {
+  font-size: 30px;
+  font-weight: bold;
+  animation: piscar 2s infinite;
+}
+
+@keyframes piscar {
+  0% { color: rgb(50, 225, 248);
+ }
+  50% { color: blue;
+ }
+  100% { color: rgb(49, 145, 255);
+ }
+}
+
+.ceu {
+  width: 300px;
+  height: 200px;
+  border: 2px solid #000;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(#87CEEB, #ffffff);
+}
+
+.sol {
+  width: 80px;
+  position: absolute;
+  bottom: -50px;
+  left: 100px;
+  animation: nascer 5s infinite alternate;
+}
+
+@keyframes nascer {
+  0% { bottom: -50px; }
+  100% { bottom: 100px; }
+}
+
+.coracao {
+  width: 100px;
+  margin: 20px auto;
+  animation: bater 1s infinite;
+  
+}
+
+.coracao img {
+  width: 100%;
+}
+
+@keyframes bater {
+  0% { transform: scale(1);
+ }
+  50% { transform: scale(1.2);
+ }
+  100% { transform: scale(1);
+ }
+}
+section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
