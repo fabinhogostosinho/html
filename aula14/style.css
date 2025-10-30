@@ -1,0 +1,21 @@
+div {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    margin: 20px;
+}
+.caixa1 {
+    background: linear-gradient(90deg, red 20%,blue 80%);
+    /*Por padrão de cima para baixo*/
+    /*to right, to left, to bottom, to top*/
+    /*to right = 90 deg - to bottom = 180deg*/
+}
+.caixa2{
+    background: radial-gradient(ellipse at top left, orange, yellow);
+    /*circle, ellipse*/
+    /*center, at bottom right, top left, top right, bottom left*/
+}
+.caixa3 {
+    background: conic-gradient( at top left, red, yellow, blue, green);
+}
+
