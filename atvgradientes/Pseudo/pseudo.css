@@ -1,0 +1,87 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 10px;
+}
+.botao1{
+    background-color: rgb(0, 183, 255);
+    color: white;
+    transition: 1s ease-in-out;
+}
+.botao1:hover {
+    background-color: lightblue;
+    color: black;
+}
+.botao2 {
+    background-color: rgb(0, 102, 255);
+}
+.botao2:active {
+    background-color: darkblue;
+    transform: scale(0.90);
+}
+.txt1:focus {
+    border: 2px solid blue;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 128, 255, 0.6);
+}
+img{
+    width: 300px;
+    height: auto;
+}
+.card{
+   width: 220px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #a7a2a2;
+    transition: 0.5s; 
+}
+.img{
+    width: 100%;
+    border-radius: 8px;
+}
+.card:hover{
+     transform: scale(1.05);
+    box-shadow: 0 0 100px rgba(0,0,0,.4);
+    background: #6d6a6a;
+}
+.name:focus{
+    border: 2px solid rgb(0, 0, 0);
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+.email:focus{
+    border: 2px solid rgb(0, 0, 0);
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+.enviar:hover{
+    border: 2px solid rgb(255, 0, 0);
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.6);
+}
+.enviar:active {
+    background-color: rgb(255, 3, 3);
+    transform: scale(0.90);
+}
+.img1:focus{
+    width: 600px;
+    height: auto;
+}
+.img1:hover{
+    filter: grayscale(100%);
+    transition: 2s;
+}
+.img2:hover{
+    filter: grayscale(100%);
+    transition: 2s;
+}
+.img3:hover{
+    filter: grayscale(100%);
+    transition: 2s;
+}
+.botao3:hover {
+    background-color: lightblue;
+}
+.botao3:active {
+    background-color: darkblue;
+    transform: scale(0.90);
+}
