@@ -1,0 +1,14 @@
+/*CSS*/
+.caixa {
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.visible{
+    overflow: visible;
+    background-color: lightblue;
+}

@@ -1,0 +1,11 @@
+.fonte1 {
+  font-family: "Honk", system-ui;
+ 
+}
+@font-face {
+    font-family: "monoton";
+    src: url(Font/Monoton-Regular.ttf);
+}
+.fonte2{
+    font-family: "monoton";
+}

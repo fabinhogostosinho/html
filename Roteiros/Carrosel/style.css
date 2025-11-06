@@ -1,0 +1,31 @@
+img{
+    width: 500px;
+    height: 300px;
+}
+.carrossel{
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.cImg{
+    display: flex;
+    width: 400%;
+    animation: deslizar 12s infinite;
+}
+
+@keyframes deslizar {
+    0% {transform: translateX(0);}
+    20% {transform: translateX(0);}
+
+    25% {transform: translateX(-500px);}
+    45% {transform: translateX(-500px);}
+    
+    50% {transform: translateX(-1000px);}
+    70% {transform: translateX(-1000px);}
+
+    75% {transform: translateX(-1500px);}
+    95% {transform: translateX(-1500px);}
+
+    100% {transform: translateX(0);}
+}
