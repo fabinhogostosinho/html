@@ -1,4 +1,4 @@
-/*header*/
+/* HEADER */
 header {
   background-color: rgba(248, 246, 237, 0.0);
   display: flex;
@@ -7,12 +7,13 @@ header {
   padding: 15px 60px;
   border-bottom: 3px solid rgba(0, 0, 0, 1);
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  ba
 }
-
 
 .logo img {
   width: 130px;
-  margin: 0;
 }
 
 .menu {
@@ -26,7 +27,7 @@ header {
   text-decoration: none;
   color: #2a2a2a;
   font-weight: 500;
-  transition: color 0.2s;
+  transition: 0.2s;
 }
 
 .menu a:hover {
@@ -44,7 +45,7 @@ header {
   text-decoration: none;
   color: #000;
   font-weight: 500;
-  transition: all 0.2s;
+  transition: 0.2s;
 }
 
 .botregi:hover {
@@ -53,58 +54,75 @@ header {
   border-color: #3ba849;
 }
 
-/*font*/
+/* FONT */
 @font-face {
-    font-family: "txtslogan";
-    src: url(fonts/TAN-ASTORIA-Display.ttf);
+  font-family: "txtslogan";
+  src: url(fonts/Poppins-Light.ttf);
 }
 
-.slogan{
+.slogan {
   font-family: txtslogan;
+  text-align: center;
+  font-size: 70px;
 }
-/*Body*/
+
+/* BODY */
 body {
   font-family: "Poppins", sans-serif;
   background: #fafaf2;
   margin: 0;
-  background-image: url("img/WhatsApp\ Image\ 2025-10-30\ at\ 14.09.31.jpeg");
+  background-image: url("img/WhatsApp Image 2025-10-30 at 14.09.31.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-h1 {
-  text-align: center;
-  font-size: 80px;
-}
-.ca{
-    width: 500px;
-    height: 300px;
-}
-.carrossel{
-    width: 500px;
-    height: 300px;
-    overflow: hidden;
+
+/* CARROSSEL/**/
+.carrossel {
+  width: 900px;  
+  height: 600px;
+  margin: 50px auto;  
+  overflow: hidden;
+  border-radius: 15px;
+  position: relative;
+  border: 3px solid #000000;
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35), inset 0 6px 20px rgba(0, 0, 0, 0.08);
+  background-clip: padding-box;
 }
 
-.c{
-    display: flex;
-    width: 400%;
-    animation: deslizar 12s infinite;
+.c {
+  display: flex;
+  width: 54000px; /* 800px × 6 slides */
+  animation: deslizar 18s infinite;
+}
+
+.ca {
+  width: 900px;
+  height: 600px;
+  object-fit: cover;
 }
 
 @keyframes deslizar {
-    0% {transform: translateX(0);}
-    20% {transform: translateX(0);}
 
-    25% {transform: translateX(-500px);}
-    45% {transform: translateX(-500px);}
-    
-    50% {transform: translateX(-1000px);}
-    70% {transform: translateX(-1000px);}
+  0%   { transform: translateX(0); }
+  13%  { transform: translateX(0); }
 
-    75% {transform: translateX(-1500px);}
-    95% {transform: translateX(-1500px);}
+  16%  { transform: translateX(-900px); }
+  29%  { transform: translateX(-900px); }
 
-    100% {transform: translateX(0);}
+  32%  { transform: translateX(-1800px); }
+  45%  { transform: translateX(-1800px); }
+
+  48%  { transform: translateX(-2700px); }
+  61%  { transform: translateX(-2700px); }
+
+  64%  { transform: translateX(-3600px); }
+  77%  { transform: translateX(-3600px); }
+
+  80%  { transform: translateX(-4500px); }
+  93%  { transform: translateX(-4500px); }
+
+  100% { transform: translateX(0); }
 }
-
+/*FIM DO CARROSEL*/
