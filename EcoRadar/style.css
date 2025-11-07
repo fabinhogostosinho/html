@@ -1,128 +1,178 @@
-/* HEADER */
+/* ------ ESTILO GERAL E ESTÉTICO ------ */
+
+:root {
+  --verde: #3ba849;
+  --verde-claro: #63c76f;
+  --bege: #f7f7f0;
+  --cinza: #222;
+  --cinza-claro: #444;
+  --sombra-suave: 0 10px 35px rgba(0,0,0,0.15);
+  --radius: 18px;
+  --tempo: .35s ease;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background: var(--bege);
+  color: var(--cinza);
+  overflow-x: hidden;
+}
+
+/* ------ HEADER LUXO ------ */
 header {
-  background-color: rgba(248, 246, 237, 0.0);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 60px;
-  border-bottom: 3px solid rgba(0, 0, 0, 1);
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  padding: 18px 70px;
+  backdrop-filter: blur(8px);
+  background: rgba(255,255,255,0.4);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
   position: sticky;
   top: 0;
-  ba
+  z-index: 999;
 }
 
 .logo img {
-  width: 130px;
+  width: 140px;
+  filter: drop-shadow(0 2px 5px rgba(0,0,0,0.15));
 }
 
 .menu {
   display: flex;
   align-items: center;
-  gap: 70px;
-  font-size: 24px;
+  gap: 50px;
+  font-size: 22px;
 }
 
 .menu a {
+  color: var(--cinza-claro);
   text-decoration: none;
-  color: #2a2a2a;
-  font-weight: 500;
-  transition: 0.2s;
+  transition: var(--tempo);
 }
 
 .menu a:hover {
-  color: #3ba849;
-}
-
-.menu span {
-  color: #aaa;
+  color: var(--verde);
+  transform: scale(1.06);
 }
 
 .botregi {
-  border: 1px solid #000;
-  border-radius: 20px;
-  padding: 6px 20px;
+  padding: 8px 25px;
+  border-radius: var(--radius);
+  background: var(--verde);
+  color: white;
+  font-weight: 600;
   text-decoration: none;
-  color: #000;
-  font-weight: 500;
-  transition: 0.2s;
+  transition: var(--tempo);
 }
 
 .botregi:hover {
-  background-color: #3ba849;
-  color: #fff;
-  border-color: #3ba849;
+  background: var(--verde-claro);
+  box-shadow: var(--sombra-suave);
+  transform: translateY(-2px);
 }
 
-/* FONT */
-@font-face {
-  font-family: "txtslogan";
-  src: url(fonts/Poppins-Light.ttf);
-}
-
+/* ------ SLOGAN + ANIMAÇÃO ------ */
 .slogan {
-  font-family: txtslogan;
   text-align: center;
-  font-size: 70px;
+  font-size: 72px;
+  margin-top: 50px;
+  color: #203d2e;
+  animation: fadeIn .9s ease forwards;
 }
 
-/* BODY */
-body {
-  font-family: "Poppins", sans-serif;
-  background: #fafaf2;
-  margin: 0;
-  background-image: url("img/WhatsApp Image 2025-10-30 at 14.09.31.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(25px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
-/* CARROSSEL/**/
+/* ------ CARROSSEL SUPER ESTÉTICO ------ */
 .carrossel {
-  width: 900px;  
-  height: 600px;
-  margin: 50px auto;  
+  width: 1100px;
+  height: 700px;
+  margin: 70px auto;
+  border-radius: var(--radius);
   overflow: hidden;
-  border-radius: 15px;
+  box-shadow: var(--sombra-suave);
   position: relative;
-  border: 3px solid #000000;
-
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35), inset 0 6px 20px rgba(0, 0, 0, 0.08);
-  background-clip: padding-box;
 }
 
 .c {
   display: flex;
-  width: 54000px; /* 800px × 6 slides */
-  animation: deslizar 18s infinite;
+  width: 9900px;
+  animation: deslizar 30s infinite ease-in-out;
 }
 
 .ca {
-  width: 900px;
-  height: 600px;
+  width: 1100px;
+  height: 700px;
+  object-fit: cover;
+  filter: brightness(0.9);
+  transition: .3s;
+}
+
+.ca:hover {
+  filter: brightness(1);
+}
+
+/* ------ DIVISÃO ESTÉTICA ------ */
+.divisao {
+  width: 100%;
+  padding: 60px 0;
+  background: white;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+/* ------ SEÇÃO SOBRE NÓS ------ */
+.sessao-projeto {
+  width: 80%;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
+
+.texto-projeto {
+  width: 45%;
+  font-size: 21px;
+  text-align: left;
+}
+
+.texto-projeto h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #1d3426;
+}
+
+.imagem-projeto img {
+  width: 550px;
+  height: 550px;
+  border-radius: var(--radius);
+  box-shadow: var(--sombra-suave);
   object-fit: cover;
 }
 
-@keyframes deslizar {
-
-  0%   { transform: translateX(0); }
-  13%  { transform: translateX(0); }
-
-  16%  { transform: translateX(-900px); }
-  29%  { transform: translateX(-900px); }
-
-  32%  { transform: translateX(-1800px); }
-  45%  { transform: translateX(-1800px); }
-
-  48%  { transform: translateX(-2700px); }
-  61%  { transform: translateX(-2700px); }
-
-  64%  { transform: translateX(-3600px); }
-  77%  { transform: translateX(-3600px); }
-
-  80%  { transform: translateX(-4500px); }
-  93%  { transform: translateX(-4500px); }
-
-  100% { transform: translateX(0); }
+/* ------ RODAPÉ MINIMALISTA ------ */
+.rodape {
+  width: 100%;
+  padding: 25px 0;
+  background: #fff;
+  text-align: center;
+  font-size: 18px;
+  border-top: 1px solid rgba(0,0,0,0.1);
 }
-/*FIM DO CARROSEL*/
+
+/* ------ ANIMAÇÃO DO CARROSSEL (9 IMAGENS) ------ */
+@keyframes deslizar {
+  0%, 8% { transform: translateX(0); }
+  12%, 20% { transform: translateX(-1100px); }
+  24%, 32% { transform: translateX(-2200px); }
+  36%, 44% { transform: translateX(-3300px); }
+  48%, 56% { transform: translateX(-4400px); }
+  60%, 68% { transform: translateX(-5500px); }
+  72%, 80% { transform: translateX(-6600px); }
+  84%, 92% { transform: translateX(-7700px); }
+  96%, 100% { transform: translateX(-8800px); }
+}
