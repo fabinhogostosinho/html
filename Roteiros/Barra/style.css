@@ -1,0 +1,16 @@
+body {
+    height: 300vh;
+}
+::-webkit-scrollbar {
+    /* espaço para barra de rolagem */
+    width: 50px;
+}
+::-webkit-scrollbar-track{
+    /* cor de fundo da barra de rolagem */
+    background-color: blue;
+}
+::-webkit-scrollbar-thumb{
+    /* cor da de rolagem */
+    border-radius: 50px;
+    background-color: red;
+}

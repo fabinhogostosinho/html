@@ -4,24 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EcoRadar</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="inicio.css">
 </head>
 <body>
 
-  <header style="background-image: url(img/WhatsApp\ Image\ 2025-11-06\ at\ 16.43.10.jpeg);">
-    <div class="logo">
+<header style="background-image: url(img/WhatsApp\ Image\ 2025-11-06\ at\ 16.43.10.jpeg);">
+  <div class="logo">
+    <a href="index.html">
       <img src="https://trello.com/1/cards/68fa7c5bd2f60d98f1f0a762/attachments/6903acd5ee5c220c614b0c96/download/titulo_-_Editado.png" alt="EcoRadar">
-    </div>
+    </a>
+  </div>
 
-    <nav class="menu">
-      <span>|</span> <a href="#">Início</a>
-      <span>|</span> <a href="#">Pontos de coleta</a>
-      <span>|</span> <a href="#">Sobre nós</a>
-      <span>|</span> <a href="#">Login</a>
-    </nav>
+  <nav class="menu">
+    <span>|</span> <a href="index.html">Início</a>
+    <span>|</span> <a href="pontoscoleta.html">Pontos de coleta</a>
+    <span>|</span> <a href="#sobrenos">Sobre nós</a>
+    <span>|</span> <a href="#login">Login</a>
+  </nav>
 
-    <a href="#" class="botregi">Registre-se</a>
-  </header>
+  <a href="#registro" class="botregi">Registre-se</a>
+</header>
 
   <h1 class="slogan">Recicle melhor, viva melhor, com a EcoRadar</h1>
 <!-- /*COMEÇO DO CARROSEL*/ -->
@@ -64,6 +66,28 @@
 <footer class="rodape">
   <p>@2025 Reduza, reutilize, recicle.</p>
 </footer>
+<div class="contato">
+  <h1>Contate-Nos</h1>
+
+  <label for="nome">Nome:</label>
+  <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui">
+
+  <label for="email">E-mail:</label>
+  <input type="text" id="email" name="email" placeholder="Digite seu e-mail aqui">
+
+  <div class="caixa-texto">
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" name="mensagem" rows="6" placeholder="Digite sua mensagem aqui..."></textarea>
+  </div>
+
+  <div class="checkbox-linha">
+    <input type="checkbox" id="atualizacoes">
+    <label for="atualizacoes">Desejo receber atualizações sobre os pontos de reciclagem.</label>
+  </div>
+
+  <button class="enviar_contato">Enviar</button>
+</div>
+
 
 </body>
 </html>

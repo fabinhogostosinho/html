@@ -1,0 +1,23 @@
+section {
+    height: 100vh;
+}
+*{
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+    display: none;
+}
+ol:hover li{
+    display: block;
+}

@@ -1,0 +1,166 @@
+:root {
+  --verde: #3ba849;
+  --verde-claro: #63c76f;
+  --bege: #f7f7f0;
+  --cinza: #222;
+  --cinza-claro: #444;
+  --sombra-suave: 0 10px 35px rgba(0,0,0,0.15);
+  --radius: 18px;
+  --tempo: .35s ease;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-image: url("img/WhatsApp Image 2025-10-30 at 14.09.31.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: #222;
+  height: 335vh;
+}
+
+
+/* ------ HEADER ------ */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 70px;
+  backdrop-filter: blur(8px);
+  background: rgba(255,255,255,0.4);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+  .texto1 {
+  font-size: 65px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: #203d2e;
+  animation: fadeIn .9s ease forwards;
+}
+
+.desc {
+  margin-top: -20px;
+  margin-bottom: 50px;
+  align-items: flex-start;
+  justify-content: center;
+  display: flex;
+  font-family: url(fonts/Poppins-Regular.ttf);
+  font-size: 25px;
+  color: #203d2e;
+  animation: fadeIn .9s ease forwards;
+
+}
+
+.logo img {
+  width: 140px;
+  filter: drop-shadow(0 2px 5px rgba(0,0,0,0.15));
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  font-size: 22px;
+}
+
+.menu a {
+  color: var(--cinza-claro);
+  text-decoration: none;
+  transition: var(--tempo);
+}
+
+.menu a:hover {
+  color: var(--verde);
+  transform: scale(1.06);
+}
+
+.botregi {
+  padding: 8px 25px;
+  border-radius: var(--radius);
+  background: var(--verde);
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--tempo);
+}
+
+.botregi:hover {
+  background: var(--verde-claro);
+  box-shadow: var(--sombra-suave);
+  transform: translateY(-2px);
+}
+
+/* texto topo */
+.texto1cima {
+  text-align: center;
+  font-size: 6px;
+  margin-top: 50px;
+  color: #203d2e;
+  animation: fadeIn .9s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(25px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+/* CAIXAS DOS PONTOS */
+.ponto {
+  background-color: white;
+  border: 1px solid green;
+  border-radius: 15px;
+  padding: 25px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1000px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ponto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+.ponto h2 {
+  margin-top: 0;
+  color: #1b5e20;
+}
+
+.ponto p {
+  margin: 6px 0;
+  color: #2e4d2c;
+  font-size: 1rem;
+}
+
+.ponto iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  
+}
+
+::-webkit-scrollbar {
+    /* espaço para barra de rolagem */
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    /* cor de fundo da barra de rolagem */
+    background-color: rgb(55, 143, 15);
+}
+::-webkit-scrollbar-thumb{
+    /* cor da de rolagem */
+    border-radius: 100px;
+    background-color: white;
+}
+
+
+
