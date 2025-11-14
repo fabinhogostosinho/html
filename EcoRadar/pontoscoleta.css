@@ -116,7 +116,7 @@ header {
   border: 1px solid green;
   border-radius: 15px;
   padding: 25px;
-  margin: 20px auto;
+  margin: 10px 0 10px 70px;
   width: 90%;
   max-width: 1000px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -145,7 +145,6 @@ header {
   border: none;
   border-radius: 10px;
   margin-top: 10px;
-  
 }
 
 ::-webkit-scrollbar {
@@ -161,6 +160,55 @@ header {
     border-radius: 100px;
     background-color: white;
 }
+/* ÁREA DA PESQUISA NO BODY */
+.search-area {
+  width: calc(100% - 280px);
+  margin: 0 70px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+/* caixa */
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* input */
+.search-box input {
+  padding: 8px 32px;
+  border-radius: 20px;
+  border: 1px solid var(--verde);
+  outline: none;
+  font-size: 15px;
+  width: 330px;
+  max-width: 100%;
+  transition: .3s;
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(3px);
+}
+
+.search-box input:focus {
+  width: 400px;
+  max-width: 100%;
+}
+
+/* botão */
+.search-box button {
+  padding: 8px 12px;
+  border-radius: 100%;
+  border: none;
+  background: var(--verde);
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+
 
 
 
