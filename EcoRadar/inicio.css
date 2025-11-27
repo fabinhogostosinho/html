@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --verde: #3ba849;
   --verde-claro: #63c76f;
@@ -18,26 +22,22 @@ body {
   background-attachment: fixed;
   background-position: center;
   color: #222;
-
 }
+
 ::-webkit-scrollbar {
-    /* espaço para barra de rolagem */
-    width: 10px;
-}
-::-webkit-scrollbar-track{
-    /* cor de fundo da barra de rolagem */
-    background-color: rgb(55, 143, 15);
-}
-::-webkit-scrollbar-thumb{
-    /* cor da de rolagem */
-    border-radius: 100px;
-    background-color: white;
+  width: 10px;
 }
 
+::-webkit-scrollbar-track {
+  background-color: rgb(55, 143, 15);
+}
 
+::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background-color: white;
+}
 
-
-/* ------ HEADER LUXO ------ */
+/* HEADER */
 header {
   display: flex;
   justify-content: space-between;
@@ -90,7 +90,7 @@ header {
   transform: translateY(-2px);
 }
 
-/* ------ SLOGAN + ANIMAÇÃO ------ */
+/* SLOGAN */
 .slogan {
   text-align: center;
   font-size: 72px;
@@ -104,7 +104,7 @@ header {
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* ------ CARROSSEL ------ */
+/* CARROSSEL */
 .carrossel {
   width: 1100px;
   height: 700px;
@@ -133,7 +133,6 @@ header {
   filter: brightness(1);
 }
 
-/* ------ DIVISÃO ------ */
 .divisao {
   width: 100%;
   padding: 60px 0;
@@ -142,14 +141,17 @@ header {
   border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
-/* ------ SEÇÃO SOBRE NÓS ------ */
+/* SOBRE NÓS */
 .sessao-projeto {
   width: 80%;
   margin: 100px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 80px;
+  gap: 70px;
+}
+#sobrenos {
+  scroll-margin-top: 240px;
 }
 
 .texto-projeto {
@@ -172,7 +174,6 @@ header {
   object-fit: cover;
 }
 
-/* ------ RODAPÉ MINIMALISTA ------ */
 .rodape {
   width: 100%;
   padding: 25px 0;
@@ -182,7 +183,7 @@ header {
   border-top: 1px solid rgba(0,0,0,0.1);
 }
 
-/* ------ ANIMAÇÃO DO CARROSSEL (9 IMAGENS) ------ */
+/* ANIMAÇÃO CARROSSEL */
 @keyframes deslizar {
   0%, 8% { transform: translateX(0); }
   12%, 20% { transform: translateX(-1100px); }
@@ -195,15 +196,12 @@ header {
   96%, 100% { transform: translateX(-8800px); }
 }
 
-/* ===========================
-   ÁREA DE CONTATO
-   =========================== */
-
+/* CONTATO */
 .contato {
   width: 90%;
   max-width: 800px;
   margin: 50px auto;
-  background: #ffffff; /* VOLTOU PARA O BRANCO */
+  background: #ffffff;
   padding: 30px;
   border-radius: 20px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.15);
@@ -216,7 +214,6 @@ header {
   margin-bottom: 25px;
 }
 
-/* LABELS */
 .contato label {
   display: block;
   font-size: 16px;
@@ -225,39 +222,30 @@ header {
   margin-top: 15px;
 }
 
-/* INPUTS PADRÃO */
-.contato input[type="text"],
-.contato input[type="email"],
-.contato input[type="tel"],
+.contato input,
 .contato textarea {
   width: 100%;
   padding: 12px 16px;
   border-radius: 10px;
   border: 1px solid rgba(0,0,0,0.25);
   font-size: 16px;
-  font-family: "Poppins", sans-serif;
-  background: #ffffff; /* fundo normal dos campos */
+  background: #ffffff;
   transition: 0.3s ease;
   box-sizing: border-box;
 }
 
-/* EFEITO NO FOCO */
-.contato input[type="text"]:focus,
-.contato input[type="email"]:focus,
-.contato input[type="tel"]:focus,
+.contato input:focus,
 .contato textarea:focus {
   border-color: #3ba849;
   box-shadow: 0 0 6px rgba(59,168,73,0.3);
   outline: none;
 }
 
-/* TEXTAREA */
-.contato textarea {
+textarea {
   resize: none;
   height: 140px;
 }
 
-/* CHECKBOX */
 .checkbox-linha {
   display: flex;
   align-items: center;
@@ -265,13 +253,13 @@ header {
   gap: 10px;
 }
 
-.checkbox-linha label {
-  margin-top: 0;
-  font-size: 15px;
-  color: #2e4d2c;
+.checkbox-linha input {
+  width: 20px;
+  height: 20px;
+  accent-color: #3ba849;
+  cursor: pointer;
 }
 
-/* BOTÃO ENVIAR */
 .enviar_contato {
   width: 100%;
   padding: 14px;
@@ -288,28 +276,4 @@ header {
 .enviar_contato:hover {
   background: #2e883a;
   transform: translateY(-3px);
-}
-
-.enviar_contato:active {
-  transform: scale(0.98);
-}
-.checkbox-linha {
-  display: flex;
-  align-items: center; 
-  gap: 10px;
-  margin-top: 20px;
-}
-
-.checkbox-linha input[type="checkbox"] {
-  width: 20px;
-  height: 20px;
-  accent-color: #3ba849;
-  cursor: pointer;
-  margin: 0;  
-}
-
-.checkbox-linha label {
-  margin: 0;  
-  font-size: 15px;
-  color: #2e4d2c;
 }

@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entrar no EcoRadar</title>
-    <link rel="stylesheet" href="login.css">
-    <link rel="icon" type="image/png" href="img/ca5b36ff-c76c-4809-969c-a3e8d836d8fe.png">
-    <link rel="stylesheet" href="login.html">
+    <title>Registrar - EcoRadar</title>
+    <link rel="stylesheet" href="registro.css">
     <link rel="icon" type="image/png" href="img/Design sem nome.png">
-    <link rel="stylesheet" href="login.html">
+    <link rel="stylesheet" href="registro.html">
 </head>
 <header style="background-image: url(img/WhatsApp\ Image\ 2025-11-06\ at\ 16.43.10.jpeg);">
     <div class="logo">
@@ -17,7 +15,7 @@
       </a>
     </div>
 
-    <nav class="menu">
+   <nav class="menu">
       <p>|</p> <a href="inicio.html">Início</a>
       <p>|</p> <a href="pontoscoleta.html" class="ativo">Pontos de coleta</a>
       <p>|</p> <a href="/EcoRadar/inicio.html#sobrenos">Sobre nós</a>
@@ -28,12 +26,18 @@
     <a href="registro.html" class="botregi">Registre-se</a>
   </header>
 <body>
-    <div class="login-container">
-    <div class="login-box">
-        <h2>Entrar no EcoRadar</h2>
-        <p class="login-sub">Bem-vindo de volta!</p>
+
+<div class="register-container">
+    <div class="register-box">
+        <h2>Criar sua conta</h2>
+        <p class="register-sub">Registre-se para acessar o EcoRadar </p>
 
         <form>
+            <div class="input-group">
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" placeholder="Seu nome" required>
+            </div>
+
             <div class="input-group">
                 <label for="email">E-mail</label>
                 <input type="email" id="email" placeholder="Seu e-mail" required>
@@ -41,15 +45,19 @@
 
             <div class="input-group">
                 <label for="senha">Senha</label>
-                <input type="password" id="senha" placeholder="Sua senha" required>
+                <input type="password" id="senha" placeholder="Crie uma senha" required>
             </div>
 
-            <button class="btn-login" href="login.html" type="submit">Entrar</button>
+            <div class="input-group">
+                <label for="confirmar">Confirmar senha</label>
+                <input type="password" id="confirmar" placeholder="Repita sua senha" required>
+            </div>
+
+            <button class="btn-register" type="submit">Registrar</button>
         </form>
 
-        <p class="registrar">
-            Ainda não possui conta?  
-            <a href="registro.html">Registre-se</a>
+        <p class="login-voltar">
+            Já possui conta? <a href="login.html">Entrar</a>
         </p>
     </div>
 </div>

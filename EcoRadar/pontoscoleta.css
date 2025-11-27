@@ -1,3 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#sobrenos {
+  scroll-margin-top: 240px;
+}
 :root {
   --verde: #3ba849;
   --verde-claro: #63c76f;
@@ -116,7 +123,7 @@ header {
   border: 1px solid green;
   border-radius: 15px;
   padding: 25px;
-  margin: 10px 0 10px 70px;
+  margin: 20px auto;
   width: 90%;
   max-width: 1000px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -162,12 +169,10 @@ header {
 }
 /* ÁREA DA PESQUISA NO BODY */
 .search-area {
-  width: calc(100% - 280px);
-  margin: 0 70px;
+  width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   padding: 20px 0;
-  box-sizing: border-box;
 }
 
 /* caixa */
@@ -206,7 +211,14 @@ header {
   cursor: pointer;
   font-size: 20px;
 }
-
+.rodape {
+  width: 100%;
+  padding: 25px 0;
+  background: #fff;
+  text-align: center;
+  font-size: 18px;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
 
 
 

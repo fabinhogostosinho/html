@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #333;
+}
+
+/* CABEÇALHO */
+header {
+  background: #222;
+  color: white;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li {
+  margin-left: 25px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #f39c12;
+}
+
+/* SEÇÃO PRINCIPAL */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 50px;
+  gap: 60px;
+}
+
+.main-text {
+  max-width: 500px;
+}
+
+.main-text h1 {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.main-text p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.main-text a {
+  display: inline-block;
+  padding: 14px 25px;
+  background: #f39c12;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.main-text a:hover {
+  background: #d68910;
+  transform: scale(1.05);
+}
+
+/* IMAGEM */
+.main-img img {
+  width: 420px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.3s;
+  filter: brightness(0.8);
+}
+
+.main-img img:hover {
+  transform: scale(1.05);
+  filter: brightness(1);
+}
+
+/* CARDS */
+.cards {
+  padding: 60px 50px;
+  display: flex;
+  gap: 30px;
+}
+
+.card {
+  background: #eee;
+  padding: 25px;
+  border-radius: 10px;
+  width: 300px;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.card:hover h2 {
+  color: #f39c12;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: #f5f5f5;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+/* FOOTER */
+footer {
+  background: #222;
+  color: white;
+  padding: 20px 50px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+footer nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+footer nav ul li a:hover {
+  color: #f39c12;
+}
