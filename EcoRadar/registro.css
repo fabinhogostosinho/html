@@ -25,6 +25,7 @@ body {
   background-attachment: fixed;
   background-position: center;
   color: #222;
+  height: auto;
 }
 ::-webkit-scrollbar {
   width: 10px;
