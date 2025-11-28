@@ -330,3 +330,19 @@ textarea {
   font-size: 14px;
   opacity: 0.7;
 }
+
+.video-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.video-wrapper {
+  background: #e6f4e8; /* mesma vibe ecológica */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  max-width: 750px;
+}
+
