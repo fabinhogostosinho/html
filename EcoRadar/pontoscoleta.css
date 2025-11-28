@@ -117,42 +117,53 @@ header {
   from { opacity: 0; transform: translateY(25px); }
   to   { opacity: 1; transform: translateY(0); }
 }
-/* CAIXAS DOS PONTOS */
+/* ÁREA QUE CONTÉM TODAS AS CAIXAS */
+.mapa-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 por linha */
+  gap: 25px;
+  width: 90%;
+  margin: auto;
+}
+
+/* CAIXAS DOS MAPAS */
 .ponto {
   background-color: white;
   border: 1px solid green;
   border-radius: 15px;
-  padding: 25px;
-  margin: 20px auto;
-  width: 90%;
-  max-width: 1000px;
+  padding: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%; /* agora a grade controla a largura */
 }
 
+/* HOVER */
 .ponto:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
 }
 
+/* TÍTULOS E TEXTOS */
 .ponto h2 {
-  margin-top: 0;
+  font-size: 1rem;
+  margin-bottom: 5px;
   color: #1b5e20;
 }
 
 .ponto p {
-  margin: 6px 0;
+  margin: 4px 0;
+  font-size: 0.8rem;
   color: #2e4d2c;
-  font-size: 1rem;
 }
 
+/* MAPA PEQUENININHO PRA FICAR LADO A LADO */
 .ponto iframe {
   width: 100%;
-  height: 300px;
-  border: none;
+  height: 150px; /* ajusta o tamanho do mapa */
+  border: 0;
   border-radius: 10px;
-  margin-top: 10px;
 }
+
 
 ::-webkit-scrollbar {
     /* espaço para barra de rolagem */
